@@ -9,7 +9,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -140,10 +139,4 @@ func minInterval(intervals [][]int, queries []int) []int {
 	}
 
 	return results
-}
-
-func main() {
-	interval := [][]int{{4, 5}, {5, 8}, {1, 9}, {8, 10}, {1, 6}}
-	query := []int{7, 9, 3, 9, 3}
-	fmt.Println(minInterval(interval, query))
 }

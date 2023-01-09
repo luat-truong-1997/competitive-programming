@@ -4,8 +4,6 @@
  */
 package main
 
-import "fmt"
-
 type trie struct {
 	children map[int]*trie
 	value    int
@@ -70,9 +68,4 @@ func findMaximumXOR(nums []int) int {
 	}
 
 	return result
-}
-
-func main() {
-	arr := []int{3, 10, 5, 25, 2, 8}
-	fmt.Println(findMaximumXOR(arr))
 }

@@ -5,7 +5,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -156,12 +155,4 @@ func splitPainting(segments [][]int) [][]int64 {
 		right++
 	}
 	return result
-}
-
-func main() {
-	segments := [][]int{{4, 5, 9},
-		{8, 12, 5},
-		{4, 7, 19},
-		{14, 15, 1}, {3, 10, 8}, {17, 20, 18}, {7, 19, 14}, {8, 16, 6}, {14, 17, 7}, {11, 13, 3}}
-	fmt.Println(splitPainting(segments))
 }
